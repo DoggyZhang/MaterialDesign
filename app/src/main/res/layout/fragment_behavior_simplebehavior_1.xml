@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_fragment_behavior_simplebehavior_1_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:padding="10dp"
+        android:text="( Child ) Drag the Circle"/>
+
+    <Button
+        android:id="@+id/btn_fragment_behavior_simplebehavior_1_dependency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="( Dependency ) Drag Me"
+        android:textAppearance="@style/whiteTitleText"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

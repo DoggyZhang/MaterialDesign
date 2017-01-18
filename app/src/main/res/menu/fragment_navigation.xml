@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_email"
+            android:icon="@mipmap/ic_email"
+            android:title="Email"/>
+
+        <item
+            android:id="@+id/nav_menu_facebook"
+            android:icon="@mipmap/ic_facebook"
+            android:title="FaceBook"/>
+
+        <item
+            android:id="@+id/nav_menu_github"
+            android:icon="@mipmap/ic_github"
+            android:title="Github"/>
+
+        <item
+            android:id="@+id/nav_menu_linkedin"
+            android:icon="@mipmap/ic_linkedin"
+            android:title="LinkedIn"/>
+
+    </group>
+    <item android:title="other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_menu_weibo"
+                    android:icon="@mipmap/ic_weibo"
+                    android:title="WeiBo"/>
+                <item
+                    android:id="@+id/nav_menu_zhihu"
+                    android:icon="@mipmap/ic_zhihu"
+                    android:title="ZhiHu"/>
+            </group>
+
+        </menu>
+
+    </item>
+
+
+</menu>

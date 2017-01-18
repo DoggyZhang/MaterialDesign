@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Material Design</string>
+
+    <string name="author">DoggyZhang</string>
+    <string name="page">https://github.com/DoggyZhang</string>
+
+    <string name="NavigationView">NavigationView</string>
+    <string name="AppBarLayout">AppBarLayout</string>
+    <string name="CollapsingToolBarLayout">CollapsingToolBarLayout</string>
+    <string name="CoordinatorLayout">CoordinatorLayout</string>
+    <string name="FloatingActionButton">FloatingActionButton</string>
+    <string name="Palette">Palette</string>
+    <string name="RecyclerView_CardView">RecyclerView CardView</string>
+    <string name="SnackBar">SnackBar</string>
+    <string name="TextInputLayout">TextInputLayout</string>
+    <string name="ToolBar">ToolBar</string>
+
+
+    <string name="SimpleBehavior1">Simple Behavior 1</string>
+    <string name="SimpleBehavior2">Simple Behavior 2</string>
+    <string name="SwipeBehavior">Swipe Behavior</string>
+
+</resources>
