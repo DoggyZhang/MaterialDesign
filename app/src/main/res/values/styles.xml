@@ -16,6 +16,14 @@
         <item name="android:textColor">#df6161</item>
     </style>
 
+    <style name="blueTitleText" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
+    <style name="blueContentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
     <style name="whiteTitleText" parent="TextAppearance.AppCompat.Title">
         <item name="android:textColor">#fff</item>
     </style>

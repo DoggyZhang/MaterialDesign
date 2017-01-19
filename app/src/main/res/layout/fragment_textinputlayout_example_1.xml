@@ -16,6 +16,105 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Normal"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="This is hint text."/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Change Hint Color"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/blueContentText">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Now , hint text color is blue."
+                android:textColorHighlight="@color/Blue"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSelectHandle="@mipmap/ic_cursor"
+                android:textSelectHandleLeft="@mipmap/ic_cursor"
+                android:textSelectHandleRight="@mipmap/ic_cursor"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Check Error"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputlayout_example_1_check_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/redTitleText"
+            app:hintTextAppearance="@style/blueContentText">
+
+            <EditText
+                android:id="@+id/editText_textInputlayout_example_1_check_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Do not input number."
+                android:textColor="#3c3c3c"
+                android:textColorHighlight="@color/Blue"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSelectHandle="@mipmap/ic_cursor"
+                android:textSelectHandleLeft="@mipmap/ic_cursor"
+                android:textSelectHandleRight="@mipmap/ic_cursor"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Character Counter"/>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,32 +124,22 @@
             app:counterTextAppearance="@style/blackContentText"
             app:errorEnabled="true"
             app:errorTextAppearance="@style/redTitleText"
-            app:hintAnimationEnabled="true"
-            app:hintEnabled="true"
-            app:hintTextAppearance="@style/blackContentText"
-            app:passwordToggleContentDescription="PasswordToggleContentDescription"
-            app:passwordToggleDrawable="@mipmap/ic_eye"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/Red"
-            app:passwordToggleTintMode="multiply"
-            >
+            app:hintTextAppearance="@style/blueContentText">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/Blue"
-                android:bufferType="spannable"
-                android:hint="This is hint text."
-                android:shadowColor="@color/Blue"
+                android:background="@null"
+                android:hint="The max is 10."
                 android:textColor="#3c3c3c"
                 android:textColorHighlight="@color/Blue"
-                android:textColorHint="#3c3c3c"
-                android:textSelectHandle="@mipmap/ic_eye"
-                android:textSelectHandleLeft="@mipmap/ic_eye"
-                android:textSelectHandleRight="@mipmap/ic_eye"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSelectHandle="@mipmap/ic_cursor"
+                android:textSelectHandleLeft="@mipmap/ic_cursor"
+                android:textSelectHandleRight="@mipmap/ic_cursor"
                 />
 
         </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
