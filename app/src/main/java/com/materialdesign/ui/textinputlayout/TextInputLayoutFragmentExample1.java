@@ -4,14 +4,11 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
 import com.materialdesign.R;
 import com.materialdesign.ui.base.BaseFragment;
-
-import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 /**
  * Created by Administrator on 2017/1/12.
@@ -50,8 +47,7 @@ public class TextInputLayoutFragmentExample1 extends BaseFragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String text = s.toString();
-                Log.e(TAG, "onTextChanged: " );
-                if (text.matches("[0-9]+")) {
+                if (text.matches(".*\\d+.*")) {
                     inputLayout_check_error.setErrorEnabled(true);
                     inputLayout_check_error.setError("Do not input nubmer!");
                 } else {

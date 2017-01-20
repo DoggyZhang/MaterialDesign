@@ -1,5 +1,6 @@
 package com.materialdesign.ui.textinputlayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -8,6 +9,8 @@ import android.view.View;
 import com.materialdesign.Constants;
 import com.materialdesign.R;
 import com.materialdesign.ui.base.BaseFragment;
+
+import cn.fanrunqi.materiallogin.LoginActivity;
 
 /**
  * Created by Administrator on 2017/1/12.
@@ -33,6 +36,7 @@ public class TextInputLayoutFragment extends BaseFragment implements View.OnClic
     protected void initView(View view) {
         view.findViewById(R.id.btn_TextInputLayout_Example_1).setOnClickListener(this);
         view.findViewById(R.id.btn_TextInputLayout_Example_2).setOnClickListener(this);
+        view.findViewById(R.id.btn_TextInputLayout_Example_3).setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +49,10 @@ public class TextInputLayoutFragment extends BaseFragment implements View.OnClic
                 break;
             case R.id.btn_TextInputLayout_Example_2:
                 toFragment = new TextInputLayoutFragmentExample2();
+                break;
+            case R.id.btn_TextInputLayout_Example_3:
+                Intent intent = new Intent(getContext(), LoginActivity.class);
+                startActivity(intent);
                 break;
         }
         if (toFragment != null) {

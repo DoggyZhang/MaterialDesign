@@ -1,13 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textAppearance="@style/blueTitleText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Virtual Login"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/redTitleText"
+            app:hintTextAppearance="@style/blueContentText">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_login_info"
+                android:hint="@string/Username"
+                android:padding="5dp"
+                android:textAppearance="@style/blackTitleText"
+                android:textColor="#3c3c3c"
+                android:textColorHighlight="@color/Blue"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSelectHandle="@mipmap/ic_cursor"
+                android:textSelectHandleLeft="@mipmap/ic_cursor"
+                android:textSelectHandleRight="@mipmap/ic_cursor"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/redTitleText"
+            app:hintTextAppearance="@style/blueContentText"
+            app:passwordToggleTint="@color/Blue">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_login_info"
+                android:hint="@string/Password"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:textAppearance="@style/blackTitleText"
+                android:textColor="#3c3c3c"
+                android:textColorHighlight="@color/Blue"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSelectHandle="@mipmap/ic_cursor"
+                android:textSelectHandleLeft="@mipmap/ic_cursor"
+                android:textSelectHandleRight="@mipmap/ic_cursor"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/login"
+            android:textAppearance="@style/blueTitleText"/>
+    </LinearLayout>
+
 
 </LinearLayout>
