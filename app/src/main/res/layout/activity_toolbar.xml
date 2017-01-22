@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Navigation Icon"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_toolbar_navigation_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:theme="@style/blueSwitch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="App Logo"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_toolbar_app_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:theme="@style/blueSwitch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Title"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_toolbar_title"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:theme="@style/blueSwitch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ToolBar Title Color"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_title_color_red"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_red_circle"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_title_color_green"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_green_circle"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_title_color_blue"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_blue_circle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Sub Title"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_toolbar_subTitle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:theme="@style/blueSwitch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ToolBar Subtitle Color"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_subtitle_color_red"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_red_circle"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_subtitle_color_green"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_green_circle"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_subtitle_color_blue"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_blue_circle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Menu"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_toolbar_menu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:theme="@style/blueSwitch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ToolBar Background Color"
+                    android:textAppearance="@style/blackContentText"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_background_color_red"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_red_circle"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_background_color_green"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_green_circle"/>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_background_color_blue"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_blue_circle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

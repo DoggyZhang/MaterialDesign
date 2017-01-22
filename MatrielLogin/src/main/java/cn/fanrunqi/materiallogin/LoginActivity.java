@@ -34,14 +34,14 @@ public class LoginActivity extends AppCompatActivity {
         btGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                register();
+                login();
             }
         });
         fab = (FloatingActionButton) findViewById(R.id.fab_login);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login();
+                register();
             }
         });
     }

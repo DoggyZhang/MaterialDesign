@@ -53,7 +53,6 @@
                 android:hint="@string/Username"
                 android:padding="5dp"
                 android:textAppearance="@style/blackTitleText"
-                android:textColor="#3c3c3c"
                 android:textColorHighlight="@color/Blue"
                 android:textCursorDrawable="@drawable/edittext_cursor"
                 android:textSelectHandle="@mipmap/ic_cursor"

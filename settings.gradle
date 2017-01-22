@@ -1,1 +1,1 @@
-include ':app', ':MatrielLogin', ':mylibrary'
+include ':app', ':MatrielLogin'
